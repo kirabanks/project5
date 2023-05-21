@@ -5,7 +5,7 @@
 /* ===========
 Search Bar
 =========== */
-.search {
+.searchBar {
     display: flex;
     justify-content: center;
     padding-top: 2em;
