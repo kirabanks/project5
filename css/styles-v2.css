@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #14151a;
+}
+
+/* ===========
+Search Bar
+=========== */
+.searchBar {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+input {
+    border-radius: 5px;
+    padding: 20px 30% 20px 50px;
+    font-size: .7em;
+    font-weight: bold;
+    background-color: #3D405B;
+    color: #F4F1DE;
+    border: none;
+    
+    background-image: url('../photos/icons/search.png');
+    background-repeat: no-repeat;
+    background-size: 3em;
+    background-position: 10px 10px;
+
+    transition: 0.4s ease-in-out;
+}
+
+    input:focus {
+        background-color: #787CA5;
+        color: #3D405B;
+        border: none;
+        padding: 20px 40% 20px 50px;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #14151A;
+    }
+
+    input:focus::placeholder {
+        color: #3D405B;
+    }
+
+
+/* ===========
+Photo Gallery
+=========== */
+.gallery {
+    width: 95%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-gap: 20px;
+    margin: 2em auto;
+    /* Center Items */
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.thumbnails {
+    transition: 250ms;
+    border-radius: 25%;
+    filter: grayscale(100%);
+}
+
+.thumbnails:hover {
+    transform: translateY(-10px);
+    filter: none;
+    box-shadow: 10px 10px 10px 0px black;
+    border-radius: 5%;
+}

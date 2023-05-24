@@ -28,5 +28,9 @@ searchInput.addEventListener('input', searchFilter);
 
 // ===== Baguette Box =====
 window.addEventListener('load', () => {
-    baguetteBox.run('.gallery');
+    baguetteBox.run('.gallery', {
+      // Custom baguetteBox
+      noScrollbars: true,
+      overlayBackgroundColor: 'rgba(0,0,0,100)'
+    });
 });
